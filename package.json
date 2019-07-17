@@ -1,0 +1,26 @@
+{
+  "name": "serverless-example-monorepo-with-codepipeline-codebuild",
+  "version": "1.0.0",
+  "description": "serverless-example-monorepo-with-codepipeline-codebuild",
+  "main": "handler.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "babel": {
+    "plugins": [
+      "source-map-support",
+      "transform-runtime"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "node": "8.10"
+        }
+      ],
+      "stage-3"
+    ]
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

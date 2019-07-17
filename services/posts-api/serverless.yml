@@ -1,0 +1,16 @@
+service: mono-repo-posts-api
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: us-east-1
+
+functions:
+  main:
+    handler: handler.main
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+
